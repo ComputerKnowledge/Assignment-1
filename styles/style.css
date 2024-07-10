@@ -18,7 +18,9 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 25px 0px;
+  align-items: center;
 }
+
 footer {
   background-color: rgb(221, 228, 235);
   border-radius: 10px 10px 0px 0px;
