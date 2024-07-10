@@ -1,20 +1,62 @@
+/* ADDING FONT */
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: "Azeret Mono", monospace; */
 /* SHARED SECTION  */
-html {
+
+.margin-all {
+  margin: 0px 200px;
+}
+body {
   margin: 0px;
   padding: 0px;
-}
-.margin-all {
-  margin: 0px 150px;
+  box-sizing: border-box;
+  width: 1920px;
+  font-family: "Azeret Mono", monospace;
 }
 /* BANNER SECTION */
+
 .banner-content {
   text-align: center;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 20px;
 }
 header .banner {
   background-image: url("../assets/Hero-bg.png");
+  background-size: 1920px 900px;
+  padding: 26px 221px 44px 221px;
+}
+.banner-content button {
+  border-radius: 8px;
+  margin: 66px 0px 22px 0px;
+  background: rgb(13, 19, 33);
+  padding: 21px 24px 21px 24px;
+  width: 208px;
+  height: 66px;
+
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+}
+.banner-content button:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+.banner h2 {
+  color: rgb(13, 19, 33);
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 45px;
+  margin-top: 60px;
+}
+.banner p {
+  color: rgb(13, 19, 33);
+  font-size: 22px;
+  font-weight: 400;
+  width: 1110px;
+  margin: auto;
+  margin-top: 40px;
 }
 nav {
   display: flex;
@@ -22,6 +64,7 @@ nav {
   padding: 25px 0px;
   align-items: center;
 }
+
 /* FOOTER SECTION */
 footer {
   background-color: rgb(221, 228, 235);
@@ -37,30 +80,79 @@ footer ul {
   display: flex;
   list-style: none;
 }
+
 /* WHY WEB DEVELOPMENT SECTION */
 #why {
-  padding: 80px 97px;
-  border: 1px solid black;
-  margin: 150px;
+  padding: 104px 126px;
+  margin: 96px 200px;
   text-align: center;
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.04);
+}
+
+#why h3 {
+  color: rgb(13, 19, 33);
+  font-size: 42px;
+  font-weight: 800;
+  margin: 24px 0px;
+}
+#why > p {
+  color: rgb(13, 19, 33);
+  font-size: 21px;
+  font-weight: 400;
+  opacity: 0.7;
+  padding: 40px 48px 60px 48px;
+}
+#why button:hover {
+  background-color: rgba(128, 128, 128, 0.475);
+  cursor: pointer;
 }
 
 #why .sec-1,
 .sec-2,
 .sec-3 {
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding: 48px;
-  background-color: aquamarine;
   gap: 30px;
-  margin: 30px 0px;
+  margin: 42px 0px;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 #why .sec-1-des,
 .sec-2-des,
 .sec-3-des {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#why h4 {
+  color: rgba(13, 19, 33, 0.7);
+  font-size: 24px;
+  font-weight: 700;
+}
+#why p {
+  color: rgb(13, 19, 33);
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
   text-align: left;
+}
+#why button {
+  box-sizing: border-box;
+  border: 1px solid rgb(13, 19, 33);
+  opacity: 0.7;
+  padding: 12px 20px 12px 20px;
+  margin: 32px 0px;
+  color: rgb(13, 19, 33);
+  font-size: 20px;
+  font-weight: 600;
 }
 #why .sec-2 {
   justify-content: flex-start;
@@ -68,82 +160,197 @@ footer ul {
 
 /* MY INSPIRATION SECTION */
 #inspiration {
-  padding: 32px;
-  border: 1px solid black;
-  margin: 150px;
+  padding: 32px 0px;
+  margin: 120px 200px;
   text-align: center;
 }
+#inspiration h3 {
+  color: rgb(13, 19, 33);
+  font-size: 42px;
+  font-weight: 800;
+}
+#inspiration p {
+  width: 1110px;
+  margin: auto;
+  color: rgb(13, 19, 33);
+  font-size: 21px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
 #inspiration .iframe {
-  padding: 32px;
-  border: 1px solid black;
+  box-sizing: border-box;
+  border: 1px solid rgba(13, 19, 33, 0.2);
+  border-radius: 16px;
+
+  padding: 42px;
+
   height: 800px;
 }
 #inspiration .iframe iframe {
   width: 100%;
   height: 100%;
+  border-radius: 16px;
 }
 /* MY TARGET SECTION */
 
 #target {
   text-align: center;
+  margin: 200px;
+}
+#target h3 {
+  color: rgb(13, 19, 33);
+  font-size: 42px;
+  font-weight: 800;
+}
+#target > p {
+  width: 1110px;
+  margin: auto;
+  color: rgb(13, 19, 33);
+  font-size: 21px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 30px;
+  margin-bottom: 65px;
 }
 #target .sec-tar {
-  border: 1px solid black;
   display: flex;
-
   justify-content: space-between;
-  margin: 20px 150px;
+  margin: 20px 0px;
+  align-items: center;
+  gap: 34px;
 }
 
 #target .sec-tar-1,
 .sec-tar-2,
 .sec-tar-3 {
-  border: 1px solid black;
   padding: 40px;
   text-align: left;
+  border-radius: 16px;
 }
+#target .sec-tar-1 {
+  background: rgba(255, 76, 30, 0.05);
+}
+#target .sec-tar-2 {
+  background: rgba(0, 76, 232, 0.05);
+}
+#target .sec-tar-3 {
+  background: rgba(255, 223, 0, 0.05);
+}
+
 /* MY NEXT TARGET SECTION  */
 #ntarget {
-  border: 1px solid black;
-  margin: 150px;
+  margin: 0px 200px;
   text-align: center;
+}
+#ntarget h3 {
+  color: rgb(13, 19, 33);
+  font-size: 42px;
+  font-weight: 800;
+}
+#ntarget p {
+  width: 1110px;
+  margin: auto;
+  color: rgb(13, 19, 33);
+  font-size: 21px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 30px;
+  margin-bottom: 65px;
 }
 #ntarget .sec-nter-1,
 .sec-nter-2,
 .sec-nter-3 {
   border: 1px solid black;
-  padding: 40px;
-  margin-bottom: 40px;
+  padding: 52px;
+  margin-bottom: 31px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  border-radius: 16px;
+
+  background: rgb(255, 255, 255);
 }
 #ntarget .sec-nter-des {
   text-align: left;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#ntarget .sec-nter-des h5 {
+  color: rgb(13, 19, 33);
+  font-size: 34px;
+  font-weight: 800;
+  margin: 24px 0px;
+}
+#ntarget .sec-nter-des p {
+  color: rgb(13, 19, 33);
+  font-size: 21px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+#ntarget .sec-nter-des a {
+  color: rgb(13, 19, 33);
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  margin: 24px 0px;
 }
 /* THE SUPPORT SECTION  */
 #support {
   height: 400px;
-  margin: 100px 150px;
+  margin: 100px 200px;
   background-image: url("../assets/handshake.jpg");
   background-repeat: no-repeat;
   background-size: 1620px 550px;
   padding: 64px 48px;
   text-align: center;
   color: white;
+  border-radius: 16px;
+  padding: 64px 48px 64px 48px;
+  background: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2),
+    url(Email);
 }
-#support h4 {
+#support h3 {
   font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+#support p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  opacity: 0.7;
+  font-weight: 400;
 }
 #support input[type="text"] {
   padding: 10px;
   font-size: 20px;
   width: 600px;
+  box-sizing: border-box;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  border-radius: 8px;
+
+  background: rgb(255, 255, 255);
 }
 #support input[type="button"] {
   padding: 10px;
   font-size: 20px;
+  color: rgb(13, 19, 33);
+  font-family: Azeret Mono;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 8px;
+
+  background: rgb(255, 255, 255);
 }
 #support input {
   margin: 40px 10px;
