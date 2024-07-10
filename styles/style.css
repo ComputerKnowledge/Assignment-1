@@ -1,9 +1,9 @@
-* {
+html {
   margin: 0px;
   padding: 0px;
 }
 .margin-all {
-  margin: 0px 100px;
+  margin: 0px 150px;
 }
 .banner-content {
   text-align: center;
@@ -33,7 +33,109 @@ footer ul {
   display: flex;
   list-style: none;
 }
-main {
-  height: 500px;
-  border: 2px;
+
+#why {
+  padding: 80px 97px;
+  border: 1px solid black;
+  margin: 150px;
+  text-align: center;
+}
+
+#why .sec-1,
+.sec-2,
+.sec-3 {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px;
+  background-color: aquamarine;
+  gap: 30px;
+  margin: 30px 0px;
+}
+#why .sec-1-des,
+.sec-2-des,
+.sec-3-des {
+  border: 1px solid black;
+  text-align: left;
+}
+#why .sec-2 {
+  justify-content: flex-start;
+}
+#inspiration {
+  padding: 32px;
+  border: 1px solid black;
+  margin: 150px;
+  text-align: center;
+}
+#inspiration .iframe {
+  padding: 32px;
+  border: 1px solid black;
+  height: 800px;
+}
+#inspiration .iframe iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#target {
+  text-align: center;
+}
+#target .sec-tar {
+  border: 1px solid black;
+  display: flex;
+
+  justify-content: space-between;
+  margin: 20px 150px;
+}
+
+#target .sec-tar-1,
+.sec-tar-2,
+.sec-tar-3 {
+  border: 1px solid black;
+  padding: 40px;
+  text-align: left;
+}
+#ntarget {
+  border: 1px solid black;
+  margin: 150px;
+  text-align: center;
+}
+#ntarget .sec-nter-1,
+.sec-nter-2,
+.sec-nter-3 {
+  border: 1px solid black;
+  padding: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#ntarget .sec-nter-des {
+  text-align: left;
+  margin-left: 20px;
+}
+#support {
+  height: 400px;
+  margin: 100px 150px;
+  background-image: url("../assets/handshake.jpg");
+  background-repeat: no-repeat;
+  background-size: 1620px 550px;
+  padding: 64px 48px;
+  text-align: center;
+  color: white;
+}
+#support h4 {
+  font-size: 50px;
+}
+#support input[type="text"] {
+  padding: 10px;
+  font-size: 20px;
+  width: 600px;
+}
+#support input[type="button"] {
+  padding: 10px;
+  font-size: 20px;
+}
+#support input {
+  margin: 40px 10px;
 }
