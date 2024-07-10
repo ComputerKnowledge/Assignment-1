@@ -1,3 +1,4 @@
+/* SHARED SECTION  */
 html {
   margin: 0px;
   padding: 0px;
@@ -5,6 +6,7 @@ html {
 .margin-all {
   margin: 0px 150px;
 }
+/* BANNER SECTION */
 .banner-content {
   text-align: center;
   max-width: 1200px;
@@ -20,7 +22,7 @@ nav {
   padding: 25px 0px;
   align-items: center;
 }
-
+/* FOOTER SECTION */
 footer {
   background-color: rgb(221, 228, 235);
   border-radius: 10px 10px 0px 0px;
@@ -35,7 +37,7 @@ footer ul {
   display: flex;
   list-style: none;
 }
-
+/* WHY WEB DEVELOPMENT SECTION */
 #why {
   padding: 80px 97px;
   border: 1px solid black;
@@ -63,6 +65,8 @@ footer ul {
 #why .sec-2 {
   justify-content: flex-start;
 }
+
+/* MY INSPIRATION SECTION */
 #inspiration {
   padding: 32px;
   border: 1px solid black;
@@ -78,6 +82,7 @@ footer ul {
   width: 100%;
   height: 100%;
 }
+/* MY TARGET SECTION */
 
 #target {
   text-align: center;
@@ -97,6 +102,7 @@ footer ul {
   padding: 40px;
   text-align: left;
 }
+/* MY NEXT TARGET SECTION  */
 #ntarget {
   border: 1px solid black;
   margin: 150px;
@@ -116,6 +122,7 @@ footer ul {
   text-align: left;
   margin-left: 20px;
 }
+/* THE SUPPORT SECTION  */
 #support {
   height: 400px;
   margin: 100px 150px;
